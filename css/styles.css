@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: skyblue;
+}
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    /* margin: 50px auto; */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque background */
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333; /* Darkened heading color for better contrast */
+}
+
+/* Input styles */
+#locationInput {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ccc; /* Thicker border for input */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555; /* Slightly darker text color */
+}
+
+/* Button styles */
+#searchButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #005ea6;
+}
+
+/* Weather info section */
+.weather-info {
+    margin-top: 25px;
+}
+
+/* Additional weather data styles */
+#location {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #007BFF; /* Accent color for location */
+}
+
+#temperature {
+    font-size: 32px;
+    margin: 8px 0;
+    color: #ff8c00; /* Warmer color for temperature */
+}
+
+#description {
+    font-size: 18px;
+    color: #777; /* Subdued color for description */
+    margin: 15px 0;
+}
